@@ -164,8 +164,8 @@ while unslip:
                 for i in range(1, len(sorted_angles)):
                     if sorted_angles[i] - sorted_angles[i - 1] <= 5:
                         consecutive_count += 1
-                        if consecutive_count >= 10: # If 10 or more consecutive points are found
-                            print("Continuous short points detected. Stopping the scan.")  
+                        if consecutive_count >= 10:
+                            print("Continuous Fallen points detected. Stopping the scan.")  
                             
                             print('Send status number : 2')
                             ardu.write(b'2')                      
